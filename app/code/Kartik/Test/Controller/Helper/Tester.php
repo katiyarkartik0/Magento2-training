@@ -22,3 +22,6 @@ class Tester extends Action
         $this->test->displayParams();
     }
 }
+
+
+
