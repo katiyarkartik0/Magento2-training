@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="Kartik_UserStory5_Module1" frontName="userStory5module1">
+            <module name="UserStory5_Module1"/>
+        </route>
+    </router>
+</config>

@@ -37,6 +37,5 @@ class Router implements RouterInterface
         //     //Instead, Magento will proceed with executing the specified controller action and generating the response.
         //     //Otherwise if it does not successfully finds the controller it will go on searching for infinitely
         return $actionInstance;
-
     }
 }
