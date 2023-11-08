@@ -1,13 +1,13 @@
 <?php
 
-namespace UserStory6\Module1\Block;
+namespace UserStory7\Module1\Block;
 
 use Magento\Framework\View\Element\Template;
 
-class CustomBlock extends Template{
+class message extends Template{
     protected function _toHtml()
     {
-        return '<div>Kartik Katiyar Magento custom HTML content</div>';
+        return '<div>UserStory#7Module1 My Message</div>';
     }
 
     protected function _afterToHtml($html)
