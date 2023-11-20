@@ -17,5 +17,5 @@ class Index implements ActionInterface{
 }
 
 //real class is Magento\Framework\Controller\Result\Raw
-//but we use RawFactory so that it creates a new instance
-//everytime it is called
+//but we use RawFactory so that it creates a new instance of Magento\Framework\Controller\Result\Raw class
+//everytime ->create() is called 
