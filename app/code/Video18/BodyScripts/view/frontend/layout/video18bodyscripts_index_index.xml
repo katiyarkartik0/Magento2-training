@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <body>
+        <referenceBlock name="after.body.start">
+            <block
+                name="afterbodystart"
+                template="Video18_BodyScripts::body_start/video18bodyscripts1.phtml"
+                class="Magento\Framework\View\Element\Template"
+            />            
+        </referenceBlock>
+        <referenceBlock name="before.body.end">
+            <block
+                name="beforebodyend"
+                template="Video18_BodyScripts::body_end/video18bodyscripts1.phtml"
+                class="Magento\Framework\View\Element\Template"
+            />            
+        </referenceBlock>
+    </body>
+</config>
