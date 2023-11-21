@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+        <body>
+            <!-- <referenceBlock name="customer.new" remove="true"></referenceBlock> -->
+            <referenceBlock name="customer.new" display="false"></referenceBlock>
+
+        </body>
+</page>
+<!--
+    we need to remove newcustomer block present in vendor/magento/module-customer/view/frontend/layout/customer_account_login.xml
+    hence we create a layout file in our custom module with the same name
+-->
+
+<!--
+    both
+    <referenceBlock name="customer.new" remove="true"></referenceBlock>
+    <referenceBlock name="customer.new" display="false"></referenceBlock>
+    does the same job, but one removes it and other just makes it invisible
+-->
