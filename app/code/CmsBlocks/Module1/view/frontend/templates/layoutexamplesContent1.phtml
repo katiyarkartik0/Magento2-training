@@ -1,0 +1,7 @@
+<h2><?= $block->getSubtitle() ?></h2>
+<hr>
+<?= $block->getNodeHtml()?>
+
+<p>above is layout block created on the fly from inside the Index block;</p>
+<hr>
+<?= $block->getChildHtml('cms_example_block')?>
