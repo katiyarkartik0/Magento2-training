@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Layout Example</title>
+    </head>
+    <referenceContainer name="content">
+        <block class="Video8\LayoutExamples\Block\Index\Index" name="layout_examples" template="Video8_LayoutExamples::layoutexamplesContent1.phtml" />
+    </referenceContainer>
+</page>
