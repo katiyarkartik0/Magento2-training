@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block
+                name="video17headerscripts"
+                template="Video17_HeaderScripts::head_additional/video17headerscriptsSpecific.phtml"
+                class="Magento\Framework\View\Element\Template"
+            />            
+        </referenceBlock>
+    </body>
+</config>
