@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+        <body>
+            <move element="customer.new" destination="customer.login.container" before="customer_form_login"></move>
+        </body>
+</page>
+<!--
+    we need to rearrange login block and newcustomer block present in vendor/magento/module-customer/view/frontend/layout/customer_account_login.xml
+    hence we create a layout file in our custom module with the same name
+-->
