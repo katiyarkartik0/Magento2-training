@@ -1,0 +1,9 @@
+<div class="dilevery_box">
+    <strong><?= $block->getViewModel()->getMessage() ?></strong>
+</div>
+
+<!--
+    Why are we fetching getMessage from the ViewModel directory when we can do this from Block ddirectory?
+    ans-> this is because by convention we keep all the logic in ViewModel and give abstract access of ViewModel's
+    methods to Blocks.
+-->

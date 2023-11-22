@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <body>
+        <referenceContainer name="product.info.main" >
+            <block 
+                name="dilevery_message_hardcoded" 
+                class="Magento\Framework\View\Element\Template" 
+                template="Video21_ViewModels::dilevery_message_hardcoded.phtml" before="product.info.price"
+            >
+            </block>
+            <block 
+                name="dilevery_message_fromViewModel" 
+                class="Magento\Framework\View\Element\Template" 
+                template="Video21_ViewModels::dilevery_message_fromViewModel.phtml" after="dilevery_message_hardcoded"
+            >
+                <arguments>
+                    <argument name="view_model" xsi:type="object">
+                        Video21\ViewModels\ViewModel\DileveryMessage
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>    
+    </body>
+</page>
