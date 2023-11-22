@@ -108,3 +108,8 @@ else
 fi
 
 echo "Directory structure and files created successfully in $module_dir."
+
+# Usage
+# add this script as direct-child of the project-folder and give it executable permissions
+# run the following command
+# ./<scriptname.sh> <VendorName> <ModuleName>
