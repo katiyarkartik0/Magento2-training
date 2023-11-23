@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <type name="Video22\DependencyInjection\Model\Main">
+        <arguments>
+            <argument name="util" xsi:type="object">Video22\DependencyInjection\Model\Util\Util</argument>
+            <argument name="heavyOperation" xsi:type="object">Video22\DependencyInjection\Model\HeavyOperation\HeavyOperation\Proxy</argument>
+            <argument name="data" xsi:type="array">
+                <item name="id" xsi:type="string">Class Main K</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference 
+        for="Video22\DependencyInjection\Model\InjectableInterface" 
+        type="Video22\DependencyInjection\Model\Injectable"
+    />
+    <preference 
+        for="Video22\DependencyInjection\Model\NonInjectableInterface" 
+        type="Video22\DependencyInjection\Model\NonInjectable"
+    />
+</config>
+
+<!--
+    this is targetting Video22\DependencyInjection\Model\Main class and passing items in an array in argument
+    as arguments to be used in dependency injection
+-->
+
+<!--
+    \Proxy is used generally when a class is very heavy and we want to execute the _construct function only when 
+    any method is actually required to be called of that heavy class object
+    it internally creates a proxy object so that dependency injection does not throw an error without 
+    actually creating an object of that heavy class.
+
+    when the function is finally called then only real object of the heavy class is instantiated.    
+-->

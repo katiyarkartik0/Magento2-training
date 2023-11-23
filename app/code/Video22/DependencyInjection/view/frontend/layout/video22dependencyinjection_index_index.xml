@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="content">
+        <block 
+            class="Video22\DependencyInjection\Block\Example" 
+            name="dependency_examples" 
+            template="Video22_DependencyInjection::dependency_examples.phtml" 
+        />
+    </referenceContainer>
+</page>
+
+<!--class Magento\Framework\View\Element\Template is used by block class 
+and in class attribute namespace of block is provided
+but since it is not created we can do this-->

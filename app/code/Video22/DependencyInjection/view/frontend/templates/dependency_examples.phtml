@@ -1,0 +1,23 @@
+<div>
+    <h2>Dependency Examples</h2>
+</div>
+
+<p>
+    Class Main id is <?= $block->getMain()->getId()?>
+</p>
+
+<p>
+    Class Injectable is <?= $block->getMain()->getInjectable()->getId()?>
+</p>
+
+<p>
+    Class NonInjectable is <?= $block->getMain()->getNonInjectable()->getId()?>
+</p>
+
+<p>
+    Class Util is <?= $block->getMain()->getUtil()->getName()?>
+</p>
+
+<p>
+    Class HeavyOperation is <?= $block->getMain()->getHeavyOperation()->getName()?>
+</p>
