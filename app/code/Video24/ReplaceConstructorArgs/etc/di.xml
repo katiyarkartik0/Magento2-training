@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <type name="Video24\ReplaceConstructorArgs\ViewModel\Example">
+        <arguments>
+            <argument name="defaultName" xsi:type="object">Video24\ReplaceConstructorArgs\Model\UpperCaseDefaultName</argument>
+        </arguments>
+    </type>
+</config>
+
+<!--
+    here we have hijacked $defaultName in ViewModel\Example.php 
+    and delibrately passed Model\UpperCaseDefaultName in place of it.
+    eg. Parent parent = new Child();
+    where,
+    class Child extends Parent{}
+-->
