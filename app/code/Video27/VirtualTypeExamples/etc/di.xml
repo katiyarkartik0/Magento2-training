@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Video27\VirtualTypeExamples\Api\WarehouseManagementInterface"
+        type="Video27\VirtualTypeExamples\Model\WarehouseManagement" />
+    <preference for="Video27\VirtualTypeExamples\Api\WarehouseRepoInterface"
+        type="Video27\VirtualTypeExamples\Model\WarehouseRepo" />
+
+    <virtualType name="WareHouseRepoExtended" type="Video27\VirtualTypeExamples\Model\WarehouseRepo">
+        <arguments>
+            <argument name="warehouseManagement" xsi:type="object">
+                Video27\VirtualTypeExamples\Model\WarehouseManagementExtended</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Video27\VirtualTypeExamples\ViewModel\Example">
+        <arguments>
+            <argument name="warehouseRepo" xsi:type="object">WareHouseRepoExtended</argument>
+        </arguments>
+    </type>
+</config>

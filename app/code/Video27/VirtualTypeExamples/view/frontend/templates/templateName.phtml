@@ -1,0 +1,10 @@
+<div>
+    <h2>Welcome to Video27_VirtualTypeExamples</h2>
+</div>
+<?php $warehouse = $block->getViewModel()->getWarehouse($block->getRequest());?>
+
+<?php if(!$warehouse->isEmpty()):?>
+<p>
+    <?= $warehouse->getName() ?>  :  <?= $warehouse->getPostcode()?>
+</p>
+<?php endif;?>
