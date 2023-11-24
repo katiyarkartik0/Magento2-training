@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <type name="Video35\PluginTut\Model\ProductKey">
+        <plugin name="before_product_key" type="Video35\PluginTut\Plugin\ProductKeyPlugin"></plugin>
+    </type>
+</config>
