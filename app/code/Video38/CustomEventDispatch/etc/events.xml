@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <event name="dispatch_kartik_event">
+        <observer name="content_example" instance="Video38\CustomEventDispatch\Observer\ContentExample"></observer>
+    </event>
+</config>

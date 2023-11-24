@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <event name="controller_action_predispatch">
+        <observer name="global_example" instance="Video37\ObserverExample\Observer\Example"></observer>
+    </event>
+</config>
