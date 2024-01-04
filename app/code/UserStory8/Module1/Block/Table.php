@@ -15,9 +15,9 @@ class Table extends Template
         parent::__construct($context, $data);
         $this->employeeCollection = $employeeCollection;
     }
-    public function seeData($arg)
+    public function getDeleteUrl()
     {
-        dump($arg);
+       return $this->getUrl("userstory8module1/form/delete");
     }
     public function getInfo()
     {

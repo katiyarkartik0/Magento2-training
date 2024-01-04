@@ -10,6 +10,9 @@
         <column xsi:type="int" name="employee_id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
         <column xsi:type="varchar" name="first_name" length="1024" nullable="false" comment="Employee First Name" />
         <column xsi:type="varchar" name="last_name" length="1024" nullable="false" comment="Employee Last Name" />
+        <column xsi:type="varchar" name="email_id" length="1024" nullable="false" comment="Employee Email" />
+        <column xsi:type="varchar" name="address" length="1024" nullable="false" comment="Employee address" />
+        <column xsi:type="varchar" name="phone_number" length="1024" nullable="false" comment="Employee Phone number" />
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="employee_id" />
         </constraint>

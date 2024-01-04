@@ -1,11 +1,31 @@
 <h1>Save Block</h1>
 <form action='<?= $escaper->escapeUrl($block->getActionUrl()); ?>' method="post"
     style="max-width: 400px; margin: 0 auto; text-align: left;">
-    <label for="first_name" style="font-weight: bold;"><?= $block->FIRST_NAME ?></label>
+    <label for="first_name" style="font-weight: bold;">
+        <?= $block->getFirstName() ?>
+    </label>
     <input type="text" id="first_name" name="first_name" style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
 
-    <label for="last_name" style="font-weight: bold;"><?= $block->LAST_NAME ?></label>
+    <label for="last_name" style="font-weight: bold;">
+        <?= $block->getLastName() ?>
+    </label>
     <input type="text" id="last_name" name="last_name" style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="email_id" style="font-weight: bold;">
+        <?= $block->getEmailId() ?>
+    </label>
+    <input type="text" id="email_id" name="email_id" style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="address" style="font-weight: bold;">
+        <?= $block->getAddress() ?>
+    </label>
+    <input type="text" id="address" name="address" style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="phone_number" style="font-weight: bold;">
+        <?= $block->getPhoneNumber() ?>
+    </label>
+    <input type="text" id="phone_number" name="phone_number"
+        style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
 
     <input type="submit" value="Submit"
         style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
