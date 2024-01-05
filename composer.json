@@ -18,9 +18,10 @@
     },
     "version": "2.4.6-p3",
     "require": {
-        "magento/product-community-edition": "2.4.6-p3",
+        "akeneo/module-magento2-connector-community": "^104.3",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
-        "magento/composer-root-update-plugin": "~2.0"
+        "magento/composer-root-update-plugin": "~2.0",
+        "magento/product-community-edition": "2.4.6-p3"
     },
     "autoload": {
         "exclude-from-classmap": [
@@ -85,4 +86,3 @@
         "magento-force": "override"
     }
 }
-
